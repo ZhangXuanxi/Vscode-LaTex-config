@@ -33,9 +33,7 @@ Windows装texlive，mac装mactex，windows用户记得把texlive可执行文件�
 
 ### 配置latex workshop
 
-![WeChatddca1a09ea7e9701de24680d78e27aa0jpg](file:///Users/zhangxuanxi/Desktop/WeChatddca1a09ea7e9701de24680d78e27aa0.jpg?msec=1697902991544)
-
-这里进去，点开配置文件是写json配置，或者点设置是交互式配置。按shift+cmd+P(windows shift+ctrl+P)拉下菜单栏，也可以进入配置。我把我的配置文件放在github上了，可以直接复制粘贴进你的json配置文件，一键搞定。
+点开配置文件是写json配置，或者点设置是交互式配置。按shift+cmd+P(windows shift+ctrl+P)拉下菜单栏，也可以进入配置。我把我的配置文件放在github上了，可以直接复制粘贴进你的json配置文件，一键搞定。
 
 说几个重要的：
 
@@ -52,11 +50,7 @@ Windows装texlive，mac装mactex，windows用户记得把texlive可执行文件�
 
 这个玩意是用来设置模版，形成之前那个视频里的效果。shift+cmd+P(windows shift+ctrl+P)拉下菜单搜索snippests，进入后选择latex.json
 
-![WeChat14eb57e7f328af8e7ad14214cec8253bjpg](file:///Users/zhangxuanxi/Desktop/WeChat14eb57e7f328af8e7ad14214cec8253b.jpg?msec=1697903770444)
-
 可以直接复制我的配置，我放github了，大家也可以自己定制，大概说下怎么搞：
-
-![WeChatbe8bc8630be83260dbf25a8a02f4f39fjpg](file:///Users/zhangxuanxi/Desktop/WeChatbe8bc8630be83260dbf25a8a02f4f39f.jpg?msec=1697903894296)
 
 先随便起个名字（如“Simple Template”），prefix是确定这个模版的关键字，比如我打late打到一半系统会提示，按下tab键就填充模版了。body是填充的内容。我的配置文件里包含main tex、插入图片（以及subfigure）、插入表格、插入代码片段的模版。
 
