@@ -1,0 +1,112 @@
+"latex-workshop.latex.tools": [
+        {
+         "name": "latexmk",
+         "command": "latexmk",
+         "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "-pdf",
+          "-outdir=%OUTDIR%",
+          "%DOC%"
+         ],
+         "env": {}
+        },
+        {
+         "name": "xelatex",
+         "command": "xelatex",
+         "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+         ],
+         "env": {}
+        },
+        {
+         "name": "pdflatex",
+         "command": "pdflatex",
+         "args": [
+          "-synctex=1",
+          "-interaction=nonstopmode",
+          "-file-line-error",
+          "%DOC%"
+         ],
+         "env": {}
+        },
+        {
+         "name": "bibtex",
+         "command": "bibtex",
+         "args": [
+          "%DOCFILE%"
+         ],
+         "env": {}
+        }
+        ],
+    "latex-workshop.latex.recipes": [
+
+        {
+         "name": "pdfLaTeX",
+         "tools": [
+          "pdflatex"
+         ]
+        },
+        {
+         "name": "latexmk 🔃",
+         "tools": [
+          "latexmk"
+         ]
+        },
+        {
+         "name": "xelatex",
+         "tools": [
+          "xelatex"
+         ]
+        },
+        {
+         "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+         "tools": [
+          "pdflatex",
+          "bibtex",
+          "pdflatex",
+          "pdflatex"
+         ]
+        },
+        {
+        "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+        "tools": [
+          "xelatex",
+          "bibtex",
+          "xelatex",
+          "xelatex"
+         ]
+        }
+    ],
+
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipe.default": "lastUsed",
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.synctex(busy)",
+        "*.synctex.gz(busy)",
+        "*.nav",
+        "*.vrb"
+    ],
+    "latex-workshop.latex.autoClean.run": "onSucceeded",

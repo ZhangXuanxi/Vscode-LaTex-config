@@ -1,0 +1,97 @@
+{
+    "Simple Template": {
+        "prefix": ["latex_template"],
+        "body": ["\\documentclass{article}%ctex",
+            "\\input{~/code/math_commands.tex}",
+            "",
+            "",
+            "",
+            "",
+            "\\title{\\huge ${1:Default Title}\\\\\\",
+            "\\normalsize}",
+            "\\author{${2:Xuanxi Zhang}}",
+            "\\begin{document}",     
+            "\\maketitle",
+            "$0",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "\\end{document}"
+        ],
+        "description": "Generates a simple LaTeX template"
+    },
+
+    "Figure Template":{
+        "prefix":["figure_template"],
+        "body":[
+            "\\begin{figure}[H] ",
+            "\\centering ",
+            "\\includegraphics[width=0.7\\textwidth]{${1:figname}}" ,
+            "\\caption{${2:default caption}}",
+            "\\label{${3:default label}} ",
+            "\\end{figure}",
+        ],
+        "description":""
+    },
+
+    "Table Template":{
+        "prefix":["table_template"],
+        "body":[
+            "\\begin{table}[H]",
+            "\\centering",
+            "\\begin{tabular}{${1:}}"
+            "\\hline",
+            "\\end{tabular}",
+            "\\label{${2:label}}",
+            "\\caption{${3:caption}}",
+            "\\end{table}"
+        ]
+    },
+
+    "Subfigure Template":{
+        "prefix":["subfigure_template"],
+        "body":[
+            "\\begin{figure}[H]",
+            "\\centering",
+            "\\begin{subfigure}{0.45\\textwidth}",
+            "\\includegraphics[width=\\linewidth]{${1:}}",
+            "\\subcaption{${2:}}",
+            "\\end{subfigure}",
+            "\\begin{subfigure}{0.45\\textwidth}",
+            "\\includegraphics[width=\\linewidth]{${3:}}",
+            "\\subcaption{${4:}}",
+            "\\end{subfigure}",
+            "\\caption{${5:}}",
+            "\\end{figure}"
+        ]
+    },
+
+    "Codesegment Template":{
+        "prefix":["codesegment_template"],
+        "body":[
+            "\\lstinputlisting[",
+            "    caption=${3:},",
+            "    label={${4:}},",
+            "    language=${2:},",
+            "    ]{${1:file path}}",
+        ]
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
